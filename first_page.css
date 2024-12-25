@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body{
+	font-family:'Poppins',sans-serif;
+	font-size:14px;
+	color:#4B4B4D;
+	font-weight:400;
+    line-height: 1.6;
+    margin: 0;
+	font-display:swap
+	background: rgb(204,204,204);
+}
+.report-cat[size="A4"] {
+  position: relative;
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  width: 21cm;
+  height: 29.7cm;
+}
+.pgx_banner {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/Cover1.jpg);
+    background-repeat: no-repeat;
+    width: 21cm;
+    height: 23cm;
+}
+.report-cat .cust-info {
+    padding: 60px;
+	padding-bottom: 40px;
+}
+.input-info p {
+    color: #7c7c7c;
+    margin: 0;
+    font-size: 12px;
+}
+.input-info label {
+    font-size: 16px;
+    font-weight: 600;
+}
+.report-cat .cust-info {
+    width: 100%;
+}
+#first-row, #second-row {
+    width: 100%;
+    display: flex;
+}
+.report-cat .cust-info .input-info {
+    margin-bottom: 40px;
+}
+#first-row .input-info.name_id {
+    width:90%
+}
+#first-row .input-info.age_id {
+    width:10%
+}
+#second-row .input-info.gender {
+    width:30%
+}
+#second-row .input-info.id {
+    width:30%
+}
+#second-row .input-info.date {
+    width:30%
+}
+#second-row .input-info.ehrid {
+    width:10%
+}
+.right-title p {
+    font-size: 18px;
+    color: #606060;
+}
+.right-title p .dark {
+    font-weight: 700;
+}
+
+
+@page {
+  margin: 0;
+  }
+@page vertical {
+  size: A4 portrait;
+  }
+@page horizontal {
+  size: A4 landscape;
+  }
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: unset;
+  }
+}
